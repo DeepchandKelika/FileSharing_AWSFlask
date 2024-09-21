@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>File Sharing Tool</title>
+    <link rel="stylesheet" type="text/css" href="static/fileshare.css">
+</head>
+<body>
+    <h1>Welcome to File Sharing Tool</h1>
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <ul>
+                {% for message in messages %}
+                    <li>{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+    <form method="post" enctype="multipart/form-data" action="{{ url_for('upload') }}">
+        <input type="file" name="file" required><br>
+        <input type="email" name="email" required><br>
+        <input type="email" name="email" ><br>
+        <input type="email" name="email" ><br>
+        <input type="email" name="email" ><br>
+        <input type="email" name="email" ><br>
+        <input type="submit" value="Upload">
+    </form>
+    
+</body>
+</html>
