@@ -22,3 +22,5 @@ This project allows users to upload files, which are stored in an AWS S3 bucket.
 - **AWS Account** with access to S3, DynamoDB, and SES
 - **Flask**, **boto3* 
 
+
+- luffyFileShare.py is used in AWS Lambda function to handle file metadata processing and send email notifications through SES after a file is uploaded to S3.
